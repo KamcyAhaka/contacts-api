@@ -1,12 +1,76 @@
 # LOCAL
+## GET all contacts
 GET http://localhost:8080/contacts
 
+###
+## GET single contact by ID
 GET http://localhost:8080/contacts/6963a1315484f93f6a6e25b3
 
+###
+## POST create a new contact
+POST http://localhost:8080/contacts
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "john.doe@example.com",
+  "favoriteColor": "Blue",
+  "birthday": "1990-05-15"
+}
+
+###
+## PUT update a contact by ID
+PUT http://localhost:8080/contacts/6963a1315484f93f6a6e25b3
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "email": "john.smith@example.com",
+  "favoriteColor": "Green",
+  "birthday": "1990-05-15"
+}
+
+###
+## DELETE a contact by ID
+DELETE http://localhost:8080/contacts/6963a1315484f93f6a6e25b3
 
 
 # PRODUCTION
+## GET all contacts
 GET https://contacts-api-j4p0.onrender.com/contacts/
 
+###
+## GET single contact by ID
 GET https://contacts-api-j4p0.onrender.com/contacts/6963a253da25ece8ced8f979
 
+###
+## POST create a new contact
+POST https://contacts-api-j4p0.onrender.com/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Jane",
+  "lastName": "Doe",
+  "email": "jane.doe@example.com",
+  "favoriteColor": "Purple",
+  "birthday": "1992-08-20"
+}
+
+###
+## PUT update a contact by ID
+PUT https://contacts-api-j4p0.onrender.com/contacts/6963a253da25ece8ced8f979
+Content-Type: application/json
+
+{
+  "firstName": "Jane",
+  "lastName": "Smith",
+  "email": "jane.smith@example.com",
+  "favoriteColor": "Red",
+  "birthday": "1992-08-20"
+}
+
+###
+## DELETE a contact by ID
+DELETE https://contacts-api-j4p0.onrender.com/contacts/6963a253da25ece8ced8f979
