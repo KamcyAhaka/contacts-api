@@ -64,10 +64,10 @@ PUT https://contacts-api-j4p0.onrender.com/contacts/6963a253da25ece8ced8f979
 Content-Type: application/json
 
 {
-  "firstName": "Jane",
-  "lastName": "Smith",
-  "email": "jane.smith@example.com",
-  "favoriteColor": "Red",
+  "firstName": "John",
+  "lastName": "Cena",
+  "email": "john.cena@example.com",
+  "favoriteColor": "blue",
   "birthday": "1992-08-20"
 }
 
